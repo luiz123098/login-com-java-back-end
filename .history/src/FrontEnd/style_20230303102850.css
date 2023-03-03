@@ -69,8 +69,8 @@ input-data .underline::before{
     display: flex;
     flex-direction: column;
     width: 200px;
-}
-
-.input-data input:not(:last-child){
+ }
+ 
+ .input-data input:not(:last-child){
     margin-bottom: 10px;
-}
+ }
