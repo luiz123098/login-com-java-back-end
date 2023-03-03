@@ -1,3 +1,5 @@
+package BackEnd;
+
 public class Register {
     private int id;
     private String user;

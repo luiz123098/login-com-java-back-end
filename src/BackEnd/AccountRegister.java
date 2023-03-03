@@ -1,3 +1,5 @@
+package BackEnd;
+
 public class AccountRegister {
     private int id;
     private String user;

@@ -1,3 +1,5 @@
+package BackEnd;
+
 public class AccountMB {
     String user;
     String password;
