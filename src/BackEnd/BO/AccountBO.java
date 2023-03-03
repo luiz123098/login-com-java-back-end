@@ -1,4 +1,7 @@
-package BackEnd;
+package BackEnd.BO;
+
+import BackEnd.DAO.AccountDAO;
+import BackEnd.MB.AccountMB;
 
 public class AccountBO {
 

@@ -1,8 +1,12 @@
-package BackEnd;
+package BackEnd.MB;
 
-public class AccountMB {
+import BackEnd.BO.AccountBO;
+import BackEnd.Objects.Register;
+
+public class AccountMB implements BackEnd.MB.IntefaceMB.AccountMB {
     String user;
     String password;
+    @Override
     public boolean accountRegister(){
         try{
             Register verification = new Register(getUser(), getPassword());

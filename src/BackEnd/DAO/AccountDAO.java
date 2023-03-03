@@ -1,4 +1,4 @@
-package BackEnd;
+package BackEnd.DAO;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,12 +1,13 @@
-package BackEnd;
+package BackEnd.Objects;
 
-public class AccountRegister {
+public class Register {
     private int id;
     private String user;
     private String password;
-    private String email;
-    private int age;
-
+    public Register(String user, String password){
+        this.user = user;
+        this.password = password;
+    }
     public int getId() {
         return id;
     }
@@ -24,17 +25,5 @@ public class AccountRegister {
     }
     public void setPassword(String password) {
         this.password = password;
-    }
-    public String getEmail() {
-        return email;
-    }
-    public void setEmail(String email) {
-        this.email = email;
-    }
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
     }
 }
