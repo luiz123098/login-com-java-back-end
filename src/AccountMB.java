@@ -1,8 +1,18 @@
 public class AccountMB {
     String user;
     String password;
-    public void accountRegister(){
-    AccountVerification verification = new AccountVerification(getUser(), getPassword());
+    public boolean accountRegister(){
+        try{
+            Register verification = new Register(getUser(), getPassword());
+            AccountBO accountBO = new AccountBO();
+            if(accountBO.AccountFilter(verification.getUser(), verification.getPassword())){
+                return true;
+            } else {
+                return false;
+            }
+        }catch(Exception exception){
+            return false;
+        }
     }
 
     public String getUser() {

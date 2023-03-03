@@ -1,10 +1,20 @@
+import FrontEnd.AccountDAO;
+
 public class AccountBO {
 
     public boolean AccountFilter(String user, String password) {
-        AccountMB accountMB = new AccountMB();
-        if(accountMB.accountRegister();)
-        accountMB.accountRegister();
-        return null
+        try {
+            AccountMB accountMB = new AccountMB();
+            if (user.equals(accountMB.getUser()) || password.equals(accountMB.getPassword())) {
+                AccountDAO accountDAO = new AccountDAO();
+                accountDAO.UserRegisterConfirmation();
+                return true;
+            } else {
+                return false;
+            }
+        }catch (Exception e){
+            return false;
+        }
     }
 
 
