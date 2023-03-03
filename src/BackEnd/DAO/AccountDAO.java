@@ -8,7 +8,7 @@ public class AccountDAO {
     public String UserRegisterConfirmation(){
         Map<String, String> userRegisterConfirmation = new HashMap<>();
 
-        return
+        return "test";
 
     }
 }
